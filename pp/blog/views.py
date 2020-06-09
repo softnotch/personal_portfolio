@@ -8,3 +8,6 @@ def all_blogs(request):
 
 def about (request):
     return render(request, 'blog/about.html')
+
+def detail(request, blog_id):
+    return render (request, 'blog/detail.html', {'id': blog_id},)
